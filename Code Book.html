@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Code Book</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Code Book</h1>
+
+<p>This code book describes the variables for the dataset df_tidy2.
+This dataset is generated in the script <em>run_analysis.R</em></p>
+
+<p><strong>UNITS</strong></p>
+
+<p>The units of meausure of the variables are divided by its range (gyroscope, entropy, etc) to normalise it.
+When units are divided  by the same units, the units are cancelled are cancelled out leaving only a ratio.</p>
+
+<p><strong>VARIABLES</strong></p>
+
+<p>Variabels in df_tidy2:</p>
+
+<ul>
+<li>tbodyacc_mean_x = timesignal - body acceleration - mean value - direction x</li>
+<li>tbodyacc_mean_y = timesignal - body acceleration - mean value - direction y</li>
+<li>tbodyacc_mean_z = timesignal - body acceleration - mean value - direction z</li>
+<li>tbodyacc_std_x = timesignal - body acceleration - standard deviation - direction x</li>
+<li>tbodyacc_std_y = timesignal - body acceleration - standard deviation - direction y</li>
+<li>tbodyacc_std_z = timesignal - body acceleration - standard deviation - direction z</li>
+<li>tgravityacc_mean_x = timesignal - gravity acceleration - mean value - direction x</li>
+<li>tgravityacc_mean_y = timesignal - gravity acceleration - mean value - direction y</li>
+<li>tgravityacc_mean_z = timesignal - gravity acceleration - mean value - direction z</li>
+<li>tgravityacc_std_x = timesignal - gravity acceleration - standard deviation - direction x</li>
+<li>tgravityacc_std_y = timesignal - gravity acceleration - standard deviation - direction y</li>
+<li>tgravityacc_std_z = timesignal - gravity acceleration - standard deviation - direction z</li>
+<li>tbodyaccjerk_mean_x = timesignal - body linear acceleration jerk signal - mean value - direction x</li>
+<li>tbodyaccjerk_mean_y = timesignal - body linear acceleration jerk signal - mean value - direction y</li>
+<li>tbodyaccjerk_mean_z = timesignal - body linear acceleration jerk signal - mean value - direction z</li>
+<li>tbodyaccjerk_std_x = timesignal - body linear acceleration jerk signal - standard deviation - direction x</li>
+<li>tbodyaccjerk_std_y = timesignal - body linear acceleration jerk signal - standard deviation - direction y</li>
+<li>tbodyaccjerk_std_z = timesignal - body linear acceleration jerk signal - standard deviation - direction z</li>
+<li>tbodygyro_mean_x = timesignal - body gyroscope - mean value - direction x</li>
+<li>tbodygyro_mean_y = timesignal - body gyroscope - mean value - direction y</li>
+<li>tbodygyro_mean_z = timesignal - body gyroscope - mean value - direction z</li>
+<li>tbodygyro_std_x = timesignal - body gyroscope - standard deviation - direction x</li>
+<li>tbodygyro_std_y = timesignal - body gyroscope - standard deviation - direction y</li>
+<li>tbodygyro_std_z = timesignal - body gyroscope - standard deviation - direction z</li>
+<li>tbodygyrojerk_mean_x = timesignal - body gyroscope jerk signal - mean value - direction x</li>
+<li>tbodygyrojerk_mean_y = timesignal - body gyroscope jerk signal - mean value - direction y</li>
+<li>tbodygyrojerk_mean_z = timesignal - body gyroscope jerk signal - mean value - direction z</li>
+<li>tbodygyrojerk_std_x = timesignal - body gyroscope jerk signal - standard deviation - direction x</li>
+<li>tbodygyrojerk_std_y = timesignal - body gyroscope jerk signal - standard deviation - direction y</li>
+<li>tbodygyrojerk_std_z = timesignal - body gyroscope jerk signal - standard deviation - direction z</li>
+<li>tbodyaccmag_mean = timesignal - body acceleration - magnitude (Euclidean norm) - mean value</li>
+<li>tbodyaccmag_std = timesignal - body acceleration - magnitude (Euclidean norm) - standard deviation</li>
+<li>tgravityaccmag_mean = = timesignal - gravity acceleration - magnitude (Euclidean norm) - mean value</li>
+<li>tgravityaccmag_std = timesignal - gravity acceleration - magnitude (Euclidean norm) - standard deviation</li>
+<li>tbodyaccjerkmag_mean = timesignal - body linear acceleration jerk signal - magnitude (Euclidean norm) - mean value</li>
+<li>tbodyaccjerkmag_std = timesignal - body linear acceleration jerk signal - magnitude (Euclidean norm) - standard deviation</li>
+<li>tbodygyromag_mean = timesignal - body gyroscope - magnitude (Euclidean norm) - mean value</li>
+<li>tbodygyromag_std = timesignal - body gyroscope - magnitude (Euclidean norm) - standard deviation</li>
+<li>tbodygyrojerkmag_mean = timesignal - body gyroscope jerk signal - magnitude (Euclidean norm) - mean value</li>
+<li>tbodygyrojerkmag_std = timesignal - body gyroscope jerk signal - magnitude (Euclidean norm) - standard deviation</li>
+<li>fbodyacc_mean_x = frequencysignal - body acceleration - mean value - direction x</li>
+<li>fbodyacc_mean_y = frequencysignal - body acceleration - mean value - direction y</li>
+<li>fbodyacc_mean_z = frequencysignal - body acceleration - mean value - direction z</li>
+<li>fbodyacc_std_x = frequencysignal - body acceleration - standard deviation - direction x</li>
+<li>fbodyacc_std_y = frequencysignal - body acceleration - standard deviation - direction y</li>
+<li>fbodyacc_std_z = frequencysignal - body acceleration - standard deviation - direction z</li>
+<li>fbodyaccjerk_mean_x = frequencysignal - body acceleration jerk signal - mean value - direction x</li>
+<li>fbodyaccjerk_mean_y = frequencysignal - body acceleration jerk signal - mean value - direction y</li>
+<li>fbodyaccjerk_mean_z = frequencysignal - body acceleration jerk signal - mean value - direction z</li>
+<li>fbodyaccjerk_std_x = frequencysignal - body acceleration jerk signal - standard deviation - direction x</li>
+<li>fbodyaccjerk_std_y = frequencysignal - body acceleration jerk signal - standard deviation - direction y</li>
+<li>fbodyaccjerk_std_z = frequencysignal - body acceleration jerk signal - standard deviation - direction z</li>
+<li>fbodygyro_mean_x = frequencysignal - body gyroscope - mean value - direction x</li>
+<li>fbodygyro_mean_y = frequencysignal - body gyroscope - mean value - direction y</li>
+<li>fbodygyro_mean_z = frequencysignal - body gyroscope - mean value - direction z</li>
+<li>fbodygyro_std_x = frequencysignal - body gyroscope - standard deviation - direction x</li>
+<li>fbodygyro_std_y = frequencysignal - body gyroscope - standard deviation - direction y</li>
+<li>fbodygyro_std_z = frequencysignal - body gyroscope - standard deviation - direction z</li>
+<li>fbodyaccmag_mean = frequencysignal - body acceleration - magnitude (Euclidean norm) - mean value</li>
+<li>fbodyaccmag_std = frequencysignal - body acceleration - magnitude (Euclidean norm) - standard deviation</li>
+<li>fbodyaccjerkmag_mean = frequencysignal - body acceleration jerk signal - magnitude (Euclidean norm) - mean value</li>
+<li>fbodyaccjerkmag_std = frequencysignal - body acceleration jerk signal - magnitude (Euclidean norm) - standard deviation</li>
+<li>fbodygyromag_mean = frequencysignal - body gyroscope - magnitude (Euclidean norm) - mean value</li>
+<li>fbodygyromag_std = frequencysignal - body gyroscope - magnitude (Euclidean norm) - standard deviation</li>
+<li>fbodygyrojerkmag_mean = frequencysignal - body gyroscope jerk signal - magnitude (Euclidean norm) - mean value</li>
+<li>fbodygyrojerkmag_std = frequencysignal - body gyroscope jerk signal - magnitude (Euclidean norm) - standard deviation</li>
+</ul>
+
+</body>
+
+</html>
+
